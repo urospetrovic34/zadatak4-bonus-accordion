@@ -64,6 +64,7 @@ main{
     justify-content: space-between;
     padding:5px;
     font-size: 14px;
+    color:#4B4C5F;
 }
 
 .card{
@@ -78,6 +79,7 @@ main{
 
 .question-bold{
     font-weight: 700;
+    color:black;
 }
 
 .question button{
@@ -116,6 +118,7 @@ main{
     justify-content: flex-start;
     padding:5px;
     font-size: 14px;
+    color:#4B4C5F;
 }
 
 .rotated-arrow{

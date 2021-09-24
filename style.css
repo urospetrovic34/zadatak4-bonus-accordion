@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    height:100vh;
+}
+
+body{
+    max-width: 1920px;
+    width:100%;
+    margin:0 auto;
+    height:100vh;
+    font-family:"Kumbh Sans";
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow-x:hidden;
+    background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main{
+    height:auto;
+    display:flex;
+    align-items: center;
+    display:relative;
+    justify-content: center;
+    padding:100px 20px 100px 400px;
+    margin:0 10%;
+    background-image: url('./images/bg-pattern-desktop.svg'),url('./images/illustration-woman-online-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: -580px -320px,-90px 50px;
+    box-shadow:0px 10px 40px -10px black;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.questions-answers{
+    margin-top:25px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 400px;
+}
+.qa-pair{
+    border-bottom: 1px solid #E8E8EA;
+    max-width: 500px;
+    width: 80%;
+    margin:0 auto;
+    padding:10px;
+}
+
+.question{
+    display:flex;
+    align-items: space-between;
+    justify-content: space-between;
+    padding:5px;
+    font-size: 14px;
+    color:#4B4C5F;
+}
+
+.card{
+    display:relative;
+}
+
+.orange-box{
+    position: absolute;
+    right:calc(100% + 300px);
+    top:145px;
+}
+
+.question-bold{
+    font-weight: 700;
+    color:black;
+}
+
+.question button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.question:hover{
+    cursor: pointer;
+    color:#F47B56;
+}
+
+.question button:hover{
+    cursor: pointer;
+}
+
+.answer{
+    visibility: hidden;
+    opacity:0;
+    height:0px;
+    font-size: 12px;
+}
+
+.card{
+    position: relative;
+}
+
+.answer-visible{
+    visibility: visible;
+    opacity:1;
+    height:50%;
+    transition:opacity 0.3s ease-in-out;
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:5px;
+    font-size: 14px;
+    color:#4B4C5F;
+}
+
+.rotated-arrow{
+    transform: rotate(180deg);
+    transition:all 0.3s ease-in-out;
+}
+
+.mobile-picture,
+.mobile-pattern{
+    display:none;
+}
+
+.questions-answers > div:nth-child(3){
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width:500px;
+    width:75%;
+    margin:0 auto;
+    text-align: left;
+}
+
+.faq-head{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+@media screen and (max-width:992px) {
+    body{
+        margin-top:50px;
+    }
+    main{
+        background-image: none;
+        background-repeat: no-repeat;
+        padding:10px;
+        margin:20px;
+        height:auto;
+    }
+    .orange-box{
+        display:none;
+    }
+    .mobile-picture,
+    .mobile-pattern{
+        display:flex;
+        position: absolute;
+    }
+    .mobile-picture{
+        top:-110px;
+        padding-right:30px;
+    }
+    .mobile-pattern{
+        top:-10px;
+    }
+    .questions-answers{
+        margin-top: 100px;
+    }
+    .questions-answers > div:nth-child(3){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        text-align: left;
+    }
+    .qa-pair{
+        width: 90%;
+    }
+}
+
+/*main{
+    background-color:white;
+    box-shadow:0px 0px 20px 0px black;
+    border-radius: 20px;
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image: url('./images/bg-pattern-desktop.svg'),url('./images/illustration-woman-online-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: -100px 100px,-100px 30px;
+    margin:0 auto;
+    max-width:1920px;
+    width: 100%;
+}
+
+.bbw{
+    position:absolute;
+    z-index: 1;
+    left:-90px;
+    top:200px;
+}
+
+.prvi{
+    width:60%;
+}
+
+button{
+    background-color:white;
+    border:0px solid white;
+}
+
+.faq{
+    font-size:32px;
+    font-weight:700;
+}
+
+.questions-answers{
+    padding:120px;
+    width:1220px;
+}
+
+.questions-answers > div p{
+    font-size: 14px;
+    padding: 10px;
+}
+
+.questions-answers > div{
+    border-bottom: 1px solid black;
+}
+
+.questions-answers > div div:nth-child(1){
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.answer{
+    display: none;
+}*/
+
+/*DODATNI TEST KOMENTAR*/
